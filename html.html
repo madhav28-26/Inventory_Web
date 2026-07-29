@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📦 Inventory Management System</h1>
+
+        <!-- Dashboard -->
+        <div class="dashboard">
+
+            <div class="card">
+                <h2 id="totalProducts">0</h2>
+                <p>Total Products</p>
+            </div>
+
+            <div class="card">
+                <h2 id="totalStock">0</h2>
+                <p>Total Stock</p>
+            </div>
+
+            <div class="card">
+                <h2 id="lowStock">0</h2>
+                <p>Low Stock</p>
+            </div>
+
+            <div class="card">
+            <h2 id="inventoryValue">₹0</h2>
+            <p>Inventory Value</p>
+            </div>
+
+        </div>
+
+        <!-- Product Form -->
+        <div class="form">
+
+            <input type="number" id="id" placeholder="Product ID">
+
+            <input type="text" id="name" placeholder="Product Name">
+
+            <input type="number" id="price" placeholder="Price">
+
+            <input type="number" id="quantity" placeholder="Quantity">
+
+            <input type="text" id="category" placeholder="Category">
+
+            <button id="addBtn">Add Product</button>
+
+        </div>
+
+        <!-- Search -->
+        <input type="text" id="search" placeholder="Search Product...">
+
+        <!-- Table -->
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Category</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tableBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
